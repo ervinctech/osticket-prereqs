@@ -2,54 +2,91 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+# osTicket - Prerequisites and Installation
 
+## Overview
 
-<h2>Video Demonstration</h2>
+This project demonstrates the installation and configuration of osTicket, an open-source help desk ticketing system. The lab covers server preparation, dependency installation, database setup, and successful deployment of the application.
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+## Technologies Used
 
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Microsoft Azure
 - Internet Information Services (IIS)
+- PHP
+- MySQL
+- HeidiSQL
+- osTicket
+- Remote Desktop Protocol (RDP)
 
-<h2>Operating Systems Used </h2>
+## Operating Systems Used
 
-- Windows 10</b> (21H2)
+- Windows 10 Pro (21H2)
 
-<h2>List of Prerequisites</h2>
+## Skills Demonstrated
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Software Installation
+- IIS Configuration
+- Database Configuration
+- Web Application Deployment
+- Troubleshooting
+- Help Desk Technologies
 
-<h2>Installation Steps</h2>
+## Prerequisites
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+- Azure Virtual Machine
+- IIS Web Server
+- PHP Manager
+- MySQL Server
+- HeidiSQL
+- osTicket Installation Files
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## Installation Steps
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### Step 1: Create Azure Virtual Machine
+
+Created a Windows 10 virtual machine and connected using Remote Desktop.
+
+![image](INSERT_SCREENSHOT_HERE)
+
+### Step 2: Install IIS
+
+Enabled Internet Information Services and required features.
+
+![image](INSERT_SCREENSHOT_HERE)
+
+### Step 3: Install PHP Components
+
+Installed PHP Manager, Rewrite Module, and required dependencies.
+
+![image](INSERT_SCREENSHOT_HERE)
+
+### Step 4: Install MySQL
+
+Installed MySQL Server and verified database services.
+
+![image](INSERT_SCREENSHOT_HERE)
+
+### Step 5: Configure Database
+
+Created the osTicket database using HeidiSQL.
+
+![image](INSERT_SCREENSHOT_HERE)
+
+### Step 6: Install osTicket
+
+Configured application files and completed the installation wizard.
+
+![image](INSERT_SCREENSHOT_HERE)
+
+### Step 7: Verify Deployment
+
+Verified access to both the Admin Panel and User Portal.
+
+![image](INSERT_SCREENSHOT_HERE)
+
+## What I Learned
+
+- How web applications are deployed in a Windows environment.
+- Basic IIS administration and configuration.
+- Database creation and management using MySQL.
+- How ticketing systems support IT operations.
