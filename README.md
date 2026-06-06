@@ -50,7 +50,7 @@ Created a Windows 10 virtual machine and connected using Remote Desktop.
 
 ### Step 2: Install IIS
 
-Enabled Internet Information Services and required features.
+After connecting to a Windows 10 virtual machine through Remote Desktop, I enabled Internet Information Services (IIS) using the Windows Features menu. Once installed, I verified the installation by browsing to localhost and confirmed the IIS web server was operational. I also accessed IIS Manager to review the server configuration
 
 ![image](INSERT_SCREENSHOT_HERE)
 
