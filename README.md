@@ -72,11 +72,20 @@ After connecting to the Windows 10 virtual machine through Remote Desktop, I ena
 **IIS Manager**
 ![IIS Manager](https://github.com/ervinctech/osticket-prereqs/blob/e83432d1b2a7b7d17818481b84b69905d17a4126/How%20to%20find%20IIS.png) ![image](https://github.com/ervinctech/osticket-prereqs/blob/ece31137f39f7a82c0d1bceb001d9f6f14ceb13f/IIS%20Home%20Screen.png)
 
-### Step 3: Install PHP Components
+## Step 3: Install PHP Components
 
-Installed PHP Manager, Rewrite Module, and required dependencies.
+To prepare the web server for running PHP applications, I installed the required PHP components and dependencies, including PHP Manager for IIS and the URL Rewrite Module. These tools provide PHP support within IIS and enable proper handling of dynamic web content. After installation, I verified that the components were successfully added and available within the IIS management console.
 
-![image](INSERT_SCREENSHOT_HERE)
+### Screenshots
+
+**PHP Manager Installation**
+![PHP Manager Installation](INSERT_PHP_MANAGER_SCREENSHOT_URL_HERE)
+
+**URL Rewrite Module Installed**
+![URL Rewrite Module](INSERT_REWRITE_MODULE_SCREENSHOT_URL_HERE)
+
+**PHP Components Available in IIS Manager**
+![PHP Components in IIS](INSERT_IIS_PHP_SCREENSHOT_URL_HERE)
 
 ### Step 4: Install MySQL
 
