@@ -74,18 +74,19 @@ After connecting to the Windows 10 virtual machine through Remote Desktop, I ena
 
 ## Step 3: Install PHP Components
 
-To prepare the web server for running PHP applications, I installed the required PHP components and dependencies, including PHP Manager for IIS and the URL Rewrite Module (create "PHP" folder in Windows (C:) and extract the zip files into that folder). These tools provide PHP support within IIS and enable proper handling of dynamic web content. After installation, I verified that the components were successfully added and available within the IIS management console.
+After configuring IIS, I installed PHP to enable the web server to host PHP-based applications. I downloaded the Windows version of PHP, extracted the files to a dedicated directory, and configured the required PHP settings. To allow IIS to communicate with PHP, I enabled the CGI feature within IIS and configured a FastCGI module mapping to the PHP executable. Finally, I verified the installation by creating a PHP test page and confirming that the PHP information page loaded successfully in a web browser.
+
 
 ### Screenshots
 
 **PHP Manager Installation**
 ![PHP Manager Installation](https://github.com/ervinctech/osticket-prereqs/blob/b4512fc354c4138807a1a74381607ff957a747f3/Download%20and%20Extract.png)
 
-**URL Rewrite Module Installed**
-![URL Rewrite Module](INSERT_REWRITE_MODULE_SCREENSHOT_URL_HERE)
+**FastCGI / PHP Configuration in IIS**
+![PHP Configuration](INSERT_PHP_CONFIGURATION_SCREENSHOT_URL_HERE)
 
-**PHP Components Available in IIS Manager**
-![PHP Components in IIS](INSERT_IIS_PHP_SCREENSHOT_URL_HERE)
+**PHP Test Page Successfully Loaded**
+![PHP Info Page](INSERT_PHP_INFO_SCREENSHOT_URL_HERE)
 
 ### Step 4: Install MySQL
 
