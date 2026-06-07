@@ -52,7 +52,7 @@ Created a Windows 10 virtual machine in Microsoft Azure and configured the requi
 ![Azure VM Created](https://github.com/ervinctech/osticket-prereqs/blob/ff9a32055989930e3c740ea9d4e9cd51187520c5/Created%20VM%20Photo.png)
 
 **Remote Desktop Connection**
-![RDP Connection](images/rdp-connection.png)
+![RDP Connection](https://github.com/ervinctech/osticket-prereqs/blob/1c6647811c265060ba2e65ff62c00cb98e3c746d/Remote%20Desktop%20Connection.png)
 
 **Windows 10 Virtual Machine Desktop**
 ![Windows 10 VM](images/windows10-vm-desktop.png)
