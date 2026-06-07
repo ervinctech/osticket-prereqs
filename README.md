@@ -112,11 +112,28 @@ To provide a database backend for web applications, I installed MySQL using the 
 **Successful MySQL Login Verification**
 ![MySQL Command Line Login](https://github.com/ervinctech/osticket-prereqs/blob/50122fb5f6b37e68137bbfeccd236e58eb123907/MYSQL%20Command%20Prompt%20Confirmation.png)
 
-### Step 5: Configure Database
+## Step 5: Configure Database (Create the osTicket Database Using HeidiSQL)
 
-Created the osTicket database using HeidiSQL.
+After installing MySQL, I used HeidiSQL to connect to the local MySQL server and create the database required for osTicket. Using the root account, I established a connection to the MySQL instance, created a new database named **osTicket**, and verified that it was successfully added to the list of available databases. This database serves as the backend storage location for osTicket, housing ticket information, user accounts, system settings, and other application data.
 
-![image](INSERT_SCREENSHOT_HERE)
+### Screenshots
+
+**HeidiSQL Connection to MySQL Server**
+![HeidiSQL Connection](INSERT_HEIDISQL_CONNECTION_SCREENSHOT_URL_HERE)
+
+**Creating the osTicket Database**
+![Creating osTicket Database](INSERT_DATABASE_CREATION_SCREENSHOT_URL_HERE)
+
+**osTicket Database Successfully Created**
+![osTicket Database Created](INSERT_DATABASE_VERIFICATION_SCREENSHOT_URL_HERE)
+
+### Skills Demonstrated
+
+- Database administration
+- MySQL configuration and management
+- Database creation and verification
+- Client-server database connectivity
+- Application backend preparation
 
 ### Step 6: Install osTicket
 
