@@ -86,7 +86,9 @@ After configuring IIS, I installed PHP to enable the web server to host PHP-base
 ![CGI Feature Enabled](https://github.com/ervinctech/osticket-prereqs/blob/df1748a6e122823025d566de59622fa2da596c84/CGI%20Confirmation.png)
 
 **PHP FastCGI Module Mapping**
-![PHP Module Mapping](https://github.com/ervinctech/osticket-prereqs/blob/013a782c1fb85a9b51eef470daa350abf8e52cd3/Finding%20Module%20Mapping.png)(https://github.com/ervinctech/osticket-prereqs/blob/ac6f49b2b88bfb5f57613a69798f598e7f7e3c0b/Module%20Mapping%20Info.png)
+![PHP Module Mapping](https://github.com/ervinctech/osticket-prereqs/blob/013a782c1fb85a9b51eef470daa350abf8e52cd3/Finding%20Module%20Mapping.png) ![image](https://github.com/ervinctech/osticket-prereqs/blob/ac6f49b2b88bfb5f57613a69798f598e7f7e3c0b/Module%20Mapping%20Info.png)
+
+
 
 **PHP Test Page Successfully Loaded**
 ![PHP Info Page](INSERT_PHP_INFO_SCREENSHOT_URL_HERE)
