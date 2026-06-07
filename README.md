@@ -98,19 +98,19 @@ To provide a database backend for web applications, I installed MySQL using the 
 ### Screenshots
 
 **MySQL Installer Setup Type Selection**
-![MySQL Setup Type](INSERT_MYSQL_SETUP_TYPE_SCREENSHOT_URL_HERE)
+![MySQL Setup Type](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/MySQL%20Website%20Installer.png)
 
 **MySQL Server Configuration**
-![MySQL Server Configuration](INSERT_MYSQL_CONFIGURATION_SCREENSHOT_URL_HERE)
+![MySQL Server Configuration](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/Config%20Type%20And%20Port%20Choice.png)
 
 **Root Account Configuration**
-![MySQL Root Password Setup](INSERT_MYSQL_ROOT_PASSWORD_SCREENSHOT_URL_HERE)
+![MySQL Root Password Setup](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/Setting%20up%20SQL%20account.png)
 
 **MySQL Installation Completed**
-![MySQL Installation Complete](INSERT_MYSQL_COMPLETE_SCREENSHOT_URL_HERE)
+![MySQL Installation Complete](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/Installation%20Complete.png)
 
 **Successful MySQL Login Verification**
-![MySQL Command Line Login](INSERT_MYSQL_LOGIN_SCREENSHOT_URL_HERE)
+![MySQL Command Line Login](https://github.com/ervinctech/osticket-prereqs/blob/50122fb5f6b37e68137bbfeccd236e58eb123907/MYSQL%20Command%20Prompt%20Confirmation.png)
 
 ### Step 5: Configure Database
 
