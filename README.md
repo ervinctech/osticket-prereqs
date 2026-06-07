@@ -70,7 +70,7 @@ After connecting to the Windows 10 virtual machine through Remote Desktop, I ena
 ![IIS Default Page](https://github.com/ervinctech/osticket-prereqs/blob/20b8669b69933c61832c5ec77fea74355f834b21/Localhost%20Webpage.png)
 
 **IIS Manager**
-![IIS Manager](https://github.com/ervinctech/osticket-prereqs/blob/e83432d1b2a7b7d17818481b84b69905d17a4126/How%20to%20find%20IIS.png) ![image](INSERT_SCREENSHOT_HERE)
+![IIS Manager](https://github.com/ervinctech/osticket-prereqs/blob/e83432d1b2a7b7d17818481b84b69905d17a4126/How%20to%20find%20IIS.png) ![image](https://github.com/ervinctech/osticket-prereqs/blob/ece31137f39f7a82c0d1bceb001d9f6f14ceb13f/IIS%20Home%20Screen.png)
 
 ### Step 3: Install PHP Components
 
