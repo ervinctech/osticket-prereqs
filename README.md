@@ -74,7 +74,7 @@ After connecting to the Windows 10 virtual machine through Remote Desktop, I ena
 
 ## Step 3: Install PHP Components
 
-To prepare the web server for running PHP applications, I installed the required PHP components and dependencies, including PHP Manager for IIS and the URL Rewrite Module (create "PHP" folder in Windows (C:) and extract the zip files into that folder. These tools provide PHP support within IIS and enable proper handling of dynamic web content. After installation, I verified that the components were successfully added and available within the IIS management console.
+To prepare the web server for running PHP applications, I installed the required PHP components and dependencies, including PHP Manager for IIS and the URL Rewrite Module (create "PHP" folder in Windows (C:) and extract the zip files into that folder). These tools provide PHP support within IIS and enable proper handling of dynamic web content. After installation, I verified that the components were successfully added and available within the IIS management console.
 
 ### Screenshots
 
