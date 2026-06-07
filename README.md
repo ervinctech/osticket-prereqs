@@ -46,7 +46,8 @@ This project demonstrates the installation and configuration of osTicket, an ope
 
 Created a Windows 10 virtual machine and connected using Remote Desktop.
 
-![image](INSERT_SCREENSHOT_HERE)
+![image](INSERT_SCREENSHOT_HERE) ![image](INSERT_SCREENSHOT_HERE)
+
 
 ### Step 2: Install IIS
 
