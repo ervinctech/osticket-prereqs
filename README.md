@@ -114,9 +114,12 @@ To provide a database backend for web applications, I installed MySQL using the 
 
 ## Step 5: Configure Database (Create the osTicket Database Using HeidiSQL)
 
-After installing MySQL, I used HeidiSQL to connect to the local MySQL server and create the database required for osTicket. Using the root account, I established a connection to the MySQL instance, created a new database named **osTicket**, and verified that it was successfully added to the list of available databases. This database serves as the backend storage location for osTicket, housing ticket information, user accounts, system settings, and other application data.
+HeidiSQL was not included with the MySQL installation and had to be downloaded separately. I used HeidiSQL to connect to the local MySQL server and create the database required for osTicket. Using the root account, I established a connection to the MySQL instance, created a new database named **osTicket**, and verified that it was successfully added to the list of available databases. This database serves as the backend storage location for osTicket, housing ticket information, user accounts, system settings, and other application data.
 
 ### Screenshots
+
+**Downloading HeidiSQL from the Official Website**
+![HeidiSQL Download](INSERT_HEIDISQL_DOWNLOAD_SCREENSHOT_URL_HERE)
 
 **HeidiSQL Connection to MySQL Server**
 ![HeidiSQL Connection](INSERT_HEIDISQL_CONNECTION_SCREENSHOT_URL_HERE)
