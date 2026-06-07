@@ -119,16 +119,16 @@ HeidiSQL was not included with the MySQL installation and had to be downloaded s
 ### Screenshots
 
 **Downloading HeidiSQL from the Official Website**
-![HeidiSQL Download](INSERT_HEIDISQL_DOWNLOAD_SCREENSHOT_URL_HERE)
+![HeidiSQL Download](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/HeidiSQL%20Install.png)
 
 **HeidiSQL Connection to MySQL Server**
-![HeidiSQL Connection](INSERT_HEIDISQL_CONNECTION_SCREENSHOT_URL_HERE)
+![HeidiSQL Connection](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/Conectting%20HeidiSQL%20to%20MySQL.png)
 
 **Creating the osTicket Database**
-![Creating osTicket Database](INSERT_DATABASE_CREATION_SCREENSHOT_URL_HERE)
+![Creating osTicket Database](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/Creating%20the%20osTicket%20Database.png)
 
 **osTicket Database Successfully Created**
-![osTicket Database Created](INSERT_DATABASE_VERIFICATION_SCREENSHOT_URL_HERE)
+![osTicket Database Created](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/osTicket%20Database.png)
 
 ### Skills Demonstrated
 
