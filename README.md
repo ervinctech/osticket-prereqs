@@ -91,11 +91,26 @@ After configuring IIS, I installed PHP to enable the web server to host PHP-base
 **PHP Test Page Successfully Loaded**
 ![PHP Info Page](https://github.com/ervinctech/osticket-prereqs/blob/6291341cd4fd8fe07aafb24c9776776c06f01886/PHP%20Test%20Screen.png)
 
-### Step 4: Install MySQL
+## Step 4: Install MySQL
 
-Installed MySQL Server and verified database services.
+To provide a database backend for web applications, I installed MySQL using the MySQL Installer for Windows. I selected the Developer Default setup type, which installed MySQL Server, MySQL Workbench, and the required command-line tools. During the configuration process, I configured the MySQL server using the default development settings, assigned a root password, and configured MySQL to run as a Windows service. After the installation was complete, I verified that the database service was running successfully by connecting to MySQL through the command line using the root account.
 
-![image](INSERT_SCREENSHOT_HERE)
+### Screenshots
+
+**MySQL Installer Setup Type Selection**
+![MySQL Setup Type](INSERT_MYSQL_SETUP_TYPE_SCREENSHOT_URL_HERE)
+
+**MySQL Server Configuration**
+![MySQL Server Configuration](INSERT_MYSQL_CONFIGURATION_SCREENSHOT_URL_HERE)
+
+**Root Account Configuration**
+![MySQL Root Password Setup](INSERT_MYSQL_ROOT_PASSWORD_SCREENSHOT_URL_HERE)
+
+**MySQL Installation Completed**
+![MySQL Installation Complete](INSERT_MYSQL_COMPLETE_SCREENSHOT_URL_HERE)
+
+**Successful MySQL Login Verification**
+![MySQL Command Line Login](INSERT_MYSQL_LOGIN_SCREENSHOT_URL_HERE)
 
 ### Step 5: Configure Database
 
