@@ -42,12 +42,20 @@ This project demonstrates the installation and configuration of osTicket, an ope
 
 ## Installation Steps
 
-### Step 1: Create Azure Virtual Machine
+## Step 1: Create Azure Virtual Machine
 
-Created a Windows 10 virtual machine and connected using Remote Desktop.
+Created a Windows 10 virtual machine in Microsoft Azure and configured the required networking settings for remote access. After the deployment completed, I connected to the virtual machine using Remote Desktop Protocol (RDP) and verified that the operating system was functioning correctly. This virtual machine served as the environment for hosting and configuring the web server throughout the project.
 
-![image](INSERT_SCREENSHOT_HERE) ![image](INSERT_SCREENSHOT_HERE)
+### Screenshots
 
+**Azure Virtual Machine Created**
+![Azure VM Created](images/azure-vm-created.png)
+
+**Remote Desktop Connection**
+![RDP Connection](images/rdp-connection.png)
+
+**Windows 10 Virtual Machine Desktop**
+![Windows 10 VM](images/windows10-vm-desktop.png)
 
 ### Step 2: Install IIS
 
