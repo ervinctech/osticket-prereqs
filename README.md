@@ -138,11 +138,40 @@ HeidiSQL was not included with the MySQL installation and had to be downloaded s
 - Client-server database connectivity
 - Application backend preparation
 
-### Step 6: Install osTicket
+## Step 6: Install osTicket
 
-Configured application files and completed the installation wizard.
+After configuring IIS, PHP, and MySQL, I installed the osTicket help desk application and completed the web-based installation wizard. The osTicket files were extracted and copied to the IIS web root directory, and the required configuration file was renamed and assigned the appropriate permissions to allow installation. Using the browser-based setup wizard, I configured the help desk settings, administrator account, and MySQL database connection. After the installation completed successfully, I verified access to both the customer support portal and the administrator control panel. As a final security measure, I removed the setup directory and secured the configuration file.
 
-![image](INSERT_SCREENSHOT_HERE)
+### Screenshots
+
+**osTicket Download and Extraction**
+![osTicket Download](INSERT_OSTICKET_DOWNLOAD_SCREENSHOT_URL_HERE)
+
+**osTicket Files Copied to IIS Directory**
+![osTicket Files](INSERT_OSTICKET_FILES_SCREENSHOT_URL_HERE)
+
+**osTicket Installation Wizard**
+![osTicket Installer](INSERT_OSTICKET_INSTALLER_SCREENSHOT_URL_HERE)
+
+**osTicket Database Configuration**
+![osTicket Database Setup](INSERT_OSTICKET_DATABASE_SETUP_SCREENSHOT_URL_HERE)
+
+**osTicket Installation Complete**
+![osTicket Installed](INSERT_OSTICKET_INSTALLED_SCREENSHOT_URL_HERE)
+
+**osTicket Admin Login Page**
+![osTicket Admin Panel](INSERT_OSTICKET_ADMIN_SCREENSHOT_URL_HERE)
+
+### Skills Demonstrated
+
+- Web application deployment
+- IIS web server administration
+- PHP application configuration
+- MySQL database integration
+- Application installation and configuration
+- File system permissions management
+- Help desk platform administration
+- Post-installation security practices
 
 ### Step 7: Verify Deployment
 
