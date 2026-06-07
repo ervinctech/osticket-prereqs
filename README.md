@@ -57,11 +57,20 @@ Created a Windows 10 virtual machine in Microsoft Azure and configured the requi
 **Windows 10 Virtual Machine Desktop**
 ![Windows 10 VM](https://github.com/ervinctech/osticket-prereqs/blob/0821e99d9a243a28fa62477c6d9ed8653eed510d/Windows%2010%20VM%20Home%20Screen.png)
 
-### Step 2: Install IIS
+## Step 2: Install IIS
 
-After connecting to a Windows 10 virtual machine through Remote Desktop, I enabled Internet Information Services (IIS) using the Windows Features menu. Once installed, I verified the installation by browsing to localhost and confirmed the IIS web server was operational. I also accessed IIS Manager to review the server configuration
+After connecting to the Windows 10 virtual machine through Remote Desktop, I enabled Internet Information Services (IIS) using the Windows Features menu. Once the installation was complete, I verified that the web server was functioning correctly by browsing to localhost and confirming that the default IIS webpage loaded successfully. I also opened IIS Manager to review the server configuration and ensure the IIS services were running properly.
 
-![image](INSERT_SCREENSHOT_HERE)
+### Screenshots
+
+**Windows Features - IIS Selected**
+![IIS Installation](INSERT_IIS_INSTALLATION_SCREENSHOT_URL_HERE)
+
+**Default IIS Webpage (localhost)**
+![IIS Default Page](INSERT_LOCALHOST_SCREENSHOT_URL_HERE)
+
+**IIS Manager**
+![IIS Manager](INSERT_IIS_MANAGER_SCREENSHOT_URL_HERE)
 
 ### Step 3: Install PHP Components
 
