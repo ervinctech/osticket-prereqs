@@ -67,7 +67,7 @@ After connecting to the Windows 10 virtual machine through Remote Desktop, I ena
 ![IIS Installation](https://github.com/ervinctech/osticket-prereqs/blob/748aec2ad6edfa78d3ea46baa50b6055d22425e6/IIS%20Enabled.png)
 
 **Default IIS Webpage (localhost)**
-![IIS Default Page](INSERT_LOCALHOST_SCREENSHOT_URL_HERE)
+![IIS Default Page](https://github.com/ervinctech/osticket-prereqs/blob/20b8669b69933c61832c5ec77fea74355f834b21/Localhost%20Webpage.png)
 
 **IIS Manager**
 ![IIS Manager](INSERT_IIS_MANAGER_SCREENSHOT_URL_HERE)
