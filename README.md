@@ -55,7 +55,7 @@ Created a Windows 10 virtual machine in Microsoft Azure and configured the requi
 ![RDP Connection](https://github.com/ervinctech/osticket-prereqs/blob/1c6647811c265060ba2e65ff62c00cb98e3c746d/Remote%20Desktop%20Connection.png)
 
 **Windows 10 Virtual Machine Desktop**
-![Windows 10 VM](images/windows10-vm-desktop.png)
+![Windows 10 VM](https://github.com/ervinctech/osticket-prereqs/blob/0821e99d9a243a28fa62477c6d9ed8653eed510d/Windows%2010%20VM%20Home%20Screen.png)
 
 ### Step 2: Install IIS
 
