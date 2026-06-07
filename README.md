@@ -59,12 +59,12 @@ Created a Windows 10 virtual machine in Microsoft Azure and configured the requi
 
 ## Step 2: Install IIS
 
-After connecting to the Windows 10 virtual machine through Remote Desktop, I enabled Internet Information Services (IIS) using the Windows Features menu. Once the installation was complete, I verified that the web server was functioning correctly by browsing to localhost and confirming that the default IIS webpage loaded successfully. I also opened IIS Manager to review the server configuration and ensure the IIS services were running properly.
+After connecting to the Windows 10 virtual machine through Remote Desktop, I enabled Internet Information Services (IIS) using "turn Windows features on or off" menu. Once the installation was complete, I verified that the web server was functioning correctly by browsing to localhost and confirming that the default IIS webpage loaded successfully. I also opened IIS Manager to review the server configuration and ensure the IIS services were running properly.
 
 ### Screenshots
 
 **Windows Features - IIS Selected**
-![IIS Installation](INSERT_IIS_INSTALLATION_SCREENSHOT_URL_HERE)
+![IIS Installation](https://github.com/ervinctech/osticket-prereqs/blob/748aec2ad6edfa78d3ea46baa50b6055d22425e6/IIS%20Enabled.png)
 
 **Default IIS Webpage (localhost)**
 ![IIS Default Page](INSERT_LOCALHOST_SCREENSHOT_URL_HERE)
