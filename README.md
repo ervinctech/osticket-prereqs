@@ -79,7 +79,7 @@ To prepare the web server for running PHP applications, I installed the required
 ### Screenshots
 
 **PHP Manager Installation**
-![PHP Manager Installation](INSERT_PHP_MANAGER_SCREENSHOT_URL_HERE)
+![PHP Manager Installation](https://github.com/ervinctech/osticket-prereqs/blob/b4512fc354c4138807a1a74381607ff957a747f3/Download%20and%20Extract.png)
 
 **URL Rewrite Module Installed**
 ![URL Rewrite Module](INSERT_REWRITE_MODULE_SCREENSHOT_URL_HERE)
