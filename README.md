@@ -1,187 +1,318 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
-
 # osTicket - Prerequisites and Installation
 
 ## Overview
 
-This project demonstrates the installation and configuration of osTicket, an open-source help desk ticketing system. The lab covers server preparation, dependency installation, database setup, and successful deployment of the application.
+This project demonstrates the installation and configuration of osTicket, an open-source help desk ticketing system. The lab covers server preparation, dependency installation, database configuration, application deployment, and post-installation security tasks.
+
+---
 
 ## Technologies Used
 
 - Microsoft Azure
 - Internet Information Services (IIS)
-- PHP
-- MySQL
+- PHP 8.4
+- MySQL 8.0
 - HeidiSQL
 - osTicket
 - Remote Desktop Protocol (RDP)
+
+---
 
 ## Operating Systems Used
 
 - Windows 10 Pro (21H2)
 
+---
+
 ## Skills Demonstrated
 
-- Software Installation
-- IIS Configuration
-- Database Configuration
 - Web Application Deployment
+- IIS Administration
+- PHP Configuration
+- Database Configuration
+- Software Installation
 - Troubleshooting
+- File Permission Management
+- Security Hardening
 - Help Desk Technologies
+
+---
 
 ## Prerequisites
 
-- Azure Virtual Machine
-- IIS Web Server
-- PHP Manager
-- MySQL Server
+Before installing osTicket, the following components were required:
+
+- Windows 10 Virtual Machine
+- Internet Information Services (IIS)
+- PHP Manager for IIS
+- PHP 8.4
+- MySQL 8.0
 - HeidiSQL
 - osTicket Installation Files
 
-## Installation Steps
+---
+
+# Installation Steps
 
 ## Step 1: Create Azure Virtual Machine
 
-Created a Windows 10 virtual machine in Microsoft Azure and configured the required networking settings for remote access. After the deployment completed, I connected to the virtual machine using Remote Desktop Protocol (RDP) and verified that the operating system was functioning correctly. This virtual machine served as the environment for hosting and configuring the web server throughout the project.
+Created a Windows 10 virtual machine in Microsoft Azure and configured networking settings to allow Remote Desktop access. After deployment, connected to the virtual machine using RDP and verified the operating system was functioning properly.
 
 ### Screenshots
 
-**Azure Virtual Machine Created**
-![Azure VM Created](https://github.com/ervinctech/osticket-prereqs/blob/ff9a32055989930e3c740ea9d4e9cd51187520c5/Created%20VM%20Photo.png)
+![Azure VM Created](images/azure-vm-created.png)
 
-**Remote Desktop Connection**
-![RDP Connection](https://github.com/ervinctech/osticket-prereqs/blob/1c6647811c265060ba2e65ff62c00cb98e3c746d/Remote%20Desktop%20Connection.png)
+![RDP Connection](images/rdp-connection.png)
 
-**Windows 10 Virtual Machine Desktop**
-![Windows 10 VM](https://github.com/ervinctech/osticket-prereqs/blob/0821e99d9a243a28fa62477c6d9ed8653eed510d/Windows%2010%20VM%20Home%20Screen.png)
+![Windows 10 Desktop](images/windows10-desktop.png)
+
+---
 
 ## Step 2: Install IIS
 
-After connecting to the Windows 10 virtual machine through Remote Desktop, I enabled Internet Information Services (IIS) using "turn Windows features on or off" menu. Once the installation was complete, I verified that the web server was functioning correctly by browsing to localhost and confirming that the default IIS webpage loaded successfully. I also opened IIS Manager to review the server configuration and ensure the IIS services were running properly.
+Enabled Internet Information Services (IIS) using the Windows Features menu. After installation, verified functionality by browsing to `localhost` and confirming the default IIS webpage loaded successfully. Opened IIS Manager to verify server services and configuration.
 
 ### Screenshots
 
-**Windows Features - IIS Selected**
-![IIS Installation](https://github.com/ervinctech/osticket-prereqs/blob/748aec2ad6edfa78d3ea46baa50b6055d22425e6/IIS%20Enabled.png)
+![IIS Installation](images/iis-installation.png)
 
-**Default IIS Webpage (localhost)**
-![IIS Default Page](https://github.com/ervinctech/osticket-prereqs/blob/20b8669b69933c61832c5ec77fea74355f834b21/Localhost%20Webpage.png)
+![IIS Default Page](images/iis-default-page.png)
 
-**IIS Manager**
-![IIS Manager](https://github.com/ervinctech/osticket-prereqs/blob/e83432d1b2a7b7d17818481b84b69905d17a4126/How%20to%20find%20IIS.png) ![image](https://github.com/ervinctech/osticket-prereqs/blob/ece31137f39f7a82c0d1bceb001d9f6f14ceb13f/IIS%20Home%20Screen.png)
+![IIS Manager](images/iis-manager.png)
+
+### Skills Demonstrated
+
+- IIS Installation
+- Web Server Administration
+- Service Verification
+
+---
 
 ## Step 3: Install PHP Components
 
-After configuring IIS, I installed PHP to enable the web server to host PHP-based applications. I downloaded the Windows version of PHP, extracted the files to a dedicated directory, and configured the required PHP settings. To allow IIS to communicate with PHP, I enabled the CGI feature within IIS and configured a FastCGI module mapping to the PHP executable. Finally, I verified the installation by creating a PHP test page and confirming that the PHP information page loaded successfully in a web browser.
-
+Installed PHP to enable IIS to host PHP-based web applications. Downloaded PHP, extracted the files, enabled CGI within IIS, and configured FastCGI module mappings. Verified the installation by creating a PHP test page and successfully loading the PHP information page in a browser.
 
 ### Screenshots
 
-**PHP Manager Installation**
-![PHP Manager Installation](https://github.com/ervinctech/osticket-prereqs/blob/b4512fc354c4138807a1a74381607ff957a747f3/Download%20and%20Extract.png)
+![PHP Manager Installation](images/php-manager.png)
 
-**CGI Feature Enabled**
-![CGI Feature Enabled](https://github.com/ervinctech/osticket-prereqs/blob/df1748a6e122823025d566de59622fa2da596c84/CGI%20Confirmation.png)
+![CGI Enabled](images/cgi-enabled.png)
 
-**PHP FastCGI Module Mapping**
-![PHP Module Mapping](https://github.com/ervinctech/osticket-prereqs/blob/013a782c1fb85a9b51eef470daa350abf8e52cd3/Finding%20Module%20Mapping.png) ![image](https://github.com/ervinctech/osticket-prereqs/blob/ac6f49b2b88bfb5f57613a69798f598e7f7e3c0b/Module%20Mapping%20Info.png)
+![PHP Module Mapping](images/php-module-mapping.png)
 
-**PHP Test Page Successfully Loaded**
-![PHP Info Page](https://github.com/ervinctech/osticket-prereqs/blob/6291341cd4fd8fe07aafb24c9776776c06f01886/PHP%20Test%20Screen.png)
+![PHP Info Page](images/php-info-page.png)
+
+### Skills Demonstrated
+
+- PHP Installation
+- FastCGI Configuration
+- IIS Integration
+- Application Runtime Configuration
+
+---
 
 ## Step 4: Install MySQL
 
-To provide a database backend for web applications, I installed MySQL using the MySQL Installer for Windows. I selected the Developer Default setup type, which installed MySQL Server, MySQL Workbench, and the required command-line tools. During the configuration process, I configured the MySQL server using the default development settings, assigned a root password, and configured MySQL to run as a Windows service. After the installation was complete, I verified that the database service was running successfully by connecting to MySQL through the command line using the root account.
+Installed MySQL 8.0 and configured the database server using default development settings. Assigned a root password and configured MySQL to run as a Windows service. Verified successful installation by connecting to MySQL through the command-line client.
 
 ### Screenshots
 
-**MySQL Installer Setup Type Selection**
-![MySQL Setup Type](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/MySQL%20Website%20Installer.png)
+![MySQL Setup Type](images/mysql-setup-type.png)
 
-**MySQL Server Configuration**
-![MySQL Server Configuration](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/Config%20Type%20And%20Port%20Choice.png)
+![MySQL Configuration](images/mysql-configuration.png)
 
-**Root Account Configuration**
-![MySQL Root Password Setup](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/Setting%20up%20SQL%20account.png)
+![Root Password Setup](images/mysql-root-password.png)
 
-**MySQL Installation Completed**
-![MySQL Installation Complete](https://github.com/ervinctech/osticket-prereqs/blob/b31891e2f52c5cd533e741ecb79d31e94a9c1dc5/Installation%20Complete.png)
+![MySQL Installation Complete](images/mysql-installed.png)
 
-**Successful MySQL Login Verification**
-![MySQL Command Line Login](https://github.com/ervinctech/osticket-prereqs/blob/50122fb5f6b37e68137bbfeccd236e58eb123907/MYSQL%20Command%20Prompt%20Confirmation.png)
-
-## Step 5: Configure Database (Create the osTicket Database Using HeidiSQL)
-
-HeidiSQL was not included with the MySQL installation and had to be downloaded separately. I used HeidiSQL to connect to the local MySQL server and create the database required for osTicket. Using the root account, I established a connection to the MySQL instance, created a new database named **osTicket**, and verified that it was successfully added to the list of available databases. This database serves as the backend storage location for osTicket, housing ticket information, user accounts, system settings, and other application data.
-
-### Screenshots
-
-**Downloading HeidiSQL from the Official Website**
-![HeidiSQL Download](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/HeidiSQL%20Install.png)
-
-**HeidiSQL Connection to MySQL Server**
-![HeidiSQL Connection](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/Conectting%20HeidiSQL%20to%20MySQL.png)
-
-**Creating the osTicket Database**
-![Creating osTicket Database](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/Creating%20the%20osTicket%20Database.png)
-
-**osTicket Database Successfully Created**
-![osTicket Database Created](https://github.com/ervinctech/osticket-prereqs/blob/ce8429feddf511b11a36e66ce9ea703164059f0a/osTicket%20Database.png)
+![MySQL Login Verification](images/mysql-login.png)
 
 ### Skills Demonstrated
 
-- Database administration
-- MySQL configuration and management
-- Database creation and verification
-- Client-server database connectivity
-- Application backend preparation
+- Database Installation
+- Database Server Configuration
+- MySQL Administration
+
+---
+
+## Step 5: Configure Database Using HeidiSQL
+
+Downloaded HeidiSQL and connected to the local MySQL server using the root account. Created a new database named **osTicket** and verified that it appeared within the available databases list.
+
+The database serves as the backend storage location for:
+
+- Tickets
+- Users
+- Departments
+- System Settings
+- Email Configurations
+
+### Screenshots
+
+![HeidiSQL Download](images/heidisql-download.png)
+
+![HeidiSQL Connection](images/heidisql-connection.png)
+
+![Database Creation](images/osticket-db-create.png)
+
+![Database Verification](images/osticket-db-created.png)
+
+### Skills Demonstrated
+
+- Database Administration
+- Database Creation
+- User Privilege Management
+- Backend Application Preparation
+
+---
 
 ## Step 6: Install osTicket
 
-After configuring IIS, PHP, and MySQL, I installed the osTicket help desk application and completed the web-based installation wizard. The osTicket files were extracted and copied to the IIS web root directory, and the required configuration file was renamed and assigned the appropriate permissions to allow installation. Using the browser-based setup wizard, I configured the help desk settings, administrator account, and MySQL database connection. After the installation completed successfully, I verified access to both the customer support portal and the administrator control panel. As a final security measure, I removed the setup directory and secured the configuration file.
+Downloaded and extracted the latest version of osTicket. Copied the contents of the **upload** folder into the IIS web root directory.
+
+Configured the required file permissions for the `ost-config.php` configuration file and launched the browser-based installation wizard.
+
+The installer automatically checked:
+
+- PHP Requirements
+- IIS Configuration
+- File Permissions
+- Database Connectivity
+
+Configured:
+
+- Help Desk Name
+- Administrator Account
+- Database Settings
+- Database Credentials
+
+After validation, the installer created the required database tables and generated the configuration file.
 
 ### Screenshots
 
-**osTicket Download and Extraction**
-![osTicket Download](INSERT_OSTICKET_DOWNLOAD_SCREENSHOT_URL_HERE)
+![osTicket Download](images/osticket-download.png)
 
-**osTicket Files Copied to IIS Directory**
-![osTicket Files](INSERT_OSTICKET_FILES_SCREENSHOT_URL_HERE)
+![osTicket Files](images/osticket-files.png)
 
-**osTicket Installation Wizard**
-![osTicket Installer](INSERT_OSTICKET_INSTALLER_SCREENSHOT_URL_HERE)
+![Installer Requirements Check](images/osticket-requirements.png)
 
-**osTicket Database Configuration**
-![osTicket Database Setup](INSERT_OSTICKET_DATABASE_SETUP_SCREENSHOT_URL_HERE)
+![Database Setup](images/osticket-database-setup.png)
 
-**osTicket Installation Complete**
-![osTicket Installed](INSERT_OSTICKET_INSTALLED_SCREENSHOT_URL_HERE)
+![Installation Complete](images/osticket-installed.png)
 
-**osTicket Admin Login Page**
-![osTicket Admin Panel](INSERT_OSTICKET_ADMIN_SCREENSHOT_URL_HERE)
+![Admin Login](images/osticket-admin-login.png)
 
 ### Skills Demonstrated
 
-- Web application deployment
-- IIS web server administration
-- PHP application configuration
-- MySQL database integration
-- Application installation and configuration
-- File system permissions management
-- Help desk platform administration
-- Post-installation security practices
+- Application Deployment
+- PHP Application Configuration
+- Database Integration
+- Help Desk Platform Installation
 
-### Step 7: Verify Deployment
+---
 
-Verified access to both the Admin Panel and User Portal.
+## Step 7: Post-Installation Security Configuration
 
-![image](INSERT_SCREENSHOT_HERE)
+After installation completed successfully, performed the recommended security cleanup tasks.
 
-## What I Learned
+### Security Tasks
+
+- Removed write permissions from `include/ost-config.php`
+- Deleted the `setup` directory
+- Enabled the osTicket system
+- Verified administrator access
+- Verified user portal access
+
+These steps prevent unauthorized configuration changes and accidental reinstallation.
+
+### Screenshots
+
+![Config File Permissions](images/config-permissions.png)
+
+![Setup Folder Removed](images/setup-folder-removed.png)
+
+![Admin Dashboard](images/admin-dashboard.png)
+
+![User Portal](images/user-portal.png)
+
+### Skills Demonstrated
+
+- Security Hardening
+- Access Verification
+- System Administration
+
+---
+
+## Step 8: Verify Deployment
+
+Verified successful deployment by accessing both:
+
+- Admin Control Panel
+- End User Support Portal
+
+Confirmed:
+
+- Web Server Functionality
+- Database Connectivity
+- User Authentication
+- Administrative Access
+- Application Availability
+
+### Screenshots
+
+![Admin Dashboard Verification](images/admin-verification.png)
+
+![User Portal Verification](images/user-verification.png)
+
+---
+
+## Troubleshooting
+
+If installation issues occur, osTicket provides built-in debugging options.
+
+### Enable Error Display
+
+Locate the following lines in:
+
+- `bootstrap.php`
+- `main.inc.php` (older versions)
+
+Default:
+
+```php
+ini_set('display_errors',0);
+ini_set('display_startup_errors',0);
+```
+
+Change to:
+
+```php
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+```
+
+Errors can then be reviewed in:
+
+- Browser Output
+- PHP Error Logs
+- IIS Logs
+- osTicket Dashboard Logs
+- Mail Server Logs
+
+### Skills Demonstrated
+
+- Troubleshooting
+- Log Analysis
+- Error Diagnosis
+- Application Support
+
+---
+
+# What I Learned
 
 - How web applications are deployed in a Windows environment.
-- Basic IIS administration and configuration.
-- Database creation and management using MySQL.
-- How ticketing systems support IT operations.
+- How IIS, PHP, and MySQL work together to support web applications.
+- How to create and configure databases for application backends.
+- How file permissions impact application installation and security.
+- Basic security hardening practices for production deployments.
+- How ticketing systems support IT help desk operations and service management.
