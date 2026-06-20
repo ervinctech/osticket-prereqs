@@ -2,15 +2,20 @@
 
 ## Overview
 
-This project demonstrates the installation and configuration of osTicket, an open-source help desk ticketing system. The lab covers server preparation, dependency installation, database configuration, application deployment, and post-installation security tasks.
+This project demonstrates the installation and configuration of osTicket, an open-source help desk ticketing system, within a Microsoft Azure cloud environment. The project includes deploying a Windows 10 virtual machine, configuring IIS, installing PHP and MySQL, creating a database with HeidiSQL, deploying osTicket, and performing post-installation security tasks.
+
+The purpose of this project was to gain hands-on experience with cloud infrastructure, web servers, databases, and help desk technologies commonly used in IT Support, Help Desk, and System Administration roles.
 
 ---
 
 ## Technologies Used
 
 - Microsoft Azure
+- Azure Virtual Machines
+- Windows 10 Pro
 - Internet Information Services (IIS)
-- PHP 8.4
+- URL Rewrite Module
+- PHP 8.2
 - MySQL 8.0
 - HeidiSQL
 - osTicket
@@ -26,26 +31,31 @@ This project demonstrates the installation and configuration of osTicket, an ope
 
 ## Skills Demonstrated
 
-- Web Application Deployment
-- IIS Administration
+- Cloud Infrastructure Deployment
+- Azure Virtual Machine Administration
+- Windows Administration
+- Remote Desktop Administration
+- IIS Configuration and Management
 - PHP Configuration
-- Database Configuration
-- Software Installation
+- MySQL Database Administration
+- Database Creation and Management
+- Web Application Deployment
 - Troubleshooting
-- File Permission Management
 - Security Hardening
-- Help Desk Technologies
+- Help Desk Platform Administration
 
 ---
 
-## Prerequisites
+## Project Requirements
 
-Before installing osTicket, the following components were required:
+Before installing osTicket, the following components were installed and configured:
 
+- Microsoft Azure Account
 - Windows 10 Virtual Machine
 - Internet Information Services (IIS)
+- URL Rewrite Module
 - PHP Manager for IIS
-- PHP 8.4
+- PHP 8.2
 - MySQL 8.0
 - HeidiSQL
 - osTicket Installation Files
@@ -58,19 +68,30 @@ Before installing osTicket, the following components were required:
 
 Created a Windows 10 virtual machine in Microsoft Azure and configured networking settings to allow Remote Desktop access. After deployment, connected to the virtual machine using RDP and verified the operating system was functioning properly.
 
+This virtual machine served as the environment for hosting IIS, PHP, MySQL, and osTicket throughout the project.
+
 ### Screenshots
 
-![Azure VM Created](images/azure-vm-created.png)
+![Azure Virtual Machine Created](images/azure-vm-created.png)
 
-![RDP Connection](images/rdp-connection.png)
+![Remote Desktop Connection](images/rdp-connection.png)
 
-![Windows 10 Desktop](images/windows10-desktop.png)
+![Windows 10 Virtual Machine Desktop](images/windows10-desktop.png)
+
+### Skills Demonstrated
+
+- Azure Administration
+- Virtual Machine Deployment
+- Remote Desktop Administration
+- Cloud Infrastructure Management
 
 ---
 
 ## Step 2: Install IIS
 
-Enabled Internet Information Services (IIS) using the Windows Features menu. After installation, verified functionality by browsing to `localhost` and confirming the default IIS webpage loaded successfully. Opened IIS Manager to verify server services and configuration.
+Enabled Internet Information Services (IIS) through Windows Features. After installation, verified functionality by navigating to `http://localhost` and confirming that the default IIS webpage loaded successfully.
+
+Opened IIS Manager and verified that all required web services were running properly.
 
 ### Screenshots
 
@@ -90,7 +111,9 @@ Enabled Internet Information Services (IIS) using the Windows Features menu. Aft
 
 ## Step 3: Install PHP Components
 
-Installed PHP to enable IIS to host PHP-based web applications. Downloaded PHP, extracted the files, enabled CGI within IIS, and configured FastCGI module mappings. Verified the installation by creating a PHP test page and successfully loading the PHP information page in a browser.
+Installed PHP 8.2 and configured IIS to process PHP applications. Enabled the CGI feature, installed PHP Manager for IIS, and configured FastCGI mappings.
+
+Created a PHP test page and verified the installation by successfully loading the PHP information page in a web browser.
 
 ### Screenshots
 
@@ -98,9 +121,9 @@ Installed PHP to enable IIS to host PHP-based web applications. Downloaded PHP, 
 
 ![CGI Enabled](images/cgi-enabled.png)
 
-![PHP Module Mapping](images/php-module-mapping.png)
+![PHP FastCGI Mapping](images/php-module-mapping.png)
 
-![PHP Info Page](images/php-info-page.png)
+![PHP Information Page](images/php-info-page.png)
 
 ### Skills Demonstrated
 
@@ -113,15 +136,15 @@ Installed PHP to enable IIS to host PHP-based web applications. Downloaded PHP, 
 
 ## Step 4: Install MySQL
 
-Installed MySQL 8.0 and configured the database server using default development settings. Assigned a root password and configured MySQL to run as a Windows service. Verified successful installation by connecting to MySQL through the command-line client.
+Installed MySQL 8.0 and configured the database server. Assigned a root password, configured MySQL to run as a Windows service, and verified successful installation by connecting to the database.
 
 ### Screenshots
 
 ![MySQL Setup Type](images/mysql-setup-type.png)
 
-![MySQL Configuration](images/mysql-configuration.png)
+![MySQL Server Configuration](images/mysql-configuration.png)
 
-![Root Password Setup](images/mysql-root-password.png)
+![Root Password Configuration](images/mysql-root-password.png)
 
 ![MySQL Installation Complete](images/mysql-installed.png)
 
@@ -137,15 +160,17 @@ Installed MySQL 8.0 and configured the database server using default development
 
 ## Step 5: Configure Database Using HeidiSQL
 
-Downloaded HeidiSQL and connected to the local MySQL server using the root account. Created a new database named **osTicket** and verified that it appeared within the available databases list.
+Downloaded and installed HeidiSQL to manage the MySQL database environment.
+
+Connected to the local MySQL server using the root account and created a new database named **osTicket**. Verified the database was successfully created and accessible.
 
 The database serves as the backend storage location for:
 
-- Tickets
-- Users
+- Support Tickets
+- User Accounts
 - Departments
-- System Settings
 - Email Configurations
+- System Settings
 
 ### Screenshots
 
@@ -153,50 +178,44 @@ The database serves as the backend storage location for:
 
 ![HeidiSQL Connection](images/heidisql-connection.png)
 
-![Database Creation](images/osticket-db-create.png)
+![Creating Database](images/osticket-db-create.png)
 
-![Database Verification](images/osticket-db-created.png)
+![Database Successfully Created](images/osticket-db-created.png)
 
 ### Skills Demonstrated
 
 - Database Administration
 - Database Creation
-- User Privilege Management
+- User Permissions Management
 - Backend Application Preparation
 
 ---
 
 ## Step 6: Install osTicket
 
-Downloaded and extracted the latest version of osTicket. Copied the contents of the **upload** folder into the IIS web root directory.
+Downloaded the latest version of osTicket and extracted the installation package.
 
-Configured the required file permissions for the `ost-config.php` configuration file and launched the browser-based installation wizard.
+Copied the contents of the **upload** folder into the IIS web root directory and configured the required permissions for the `ost-config.php` configuration file.
 
-The installer automatically checked:
-
-- PHP Requirements
-- IIS Configuration
-- File Permissions
-- Database Connectivity
-
-Configured:
+Launched the browser-based installer and completed the setup process by configuring:
 
 - Help Desk Name
 - Administrator Account
-- Database Settings
-- Database Credentials
+- Database Name
+- Database Username
+- Database Password
 
-After validation, the installer created the required database tables and generated the configuration file.
+The installer automatically verified system requirements, created the necessary database tables, populated the database, and generated the configuration file.
 
 ### Screenshots
 
 ![osTicket Download](images/osticket-download.png)
 
-![osTicket Files](images/osticket-files.png)
+![osTicket Files Copied to IIS Directory](images/osticket-files.png)
 
 ![Installer Requirements Check](images/osticket-requirements.png)
 
-![Database Setup](images/osticket-database-setup.png)
+![Database Configuration](images/osticket-database-setup.png)
 
 ![Installation Complete](images/osticket-installed.png)
 
@@ -204,7 +223,7 @@ After validation, the installer created the required database tables and generat
 
 ### Skills Demonstrated
 
-- Application Deployment
+- Web Application Deployment
 - PHP Application Configuration
 - Database Integration
 - Help Desk Platform Installation
@@ -213,9 +232,9 @@ After validation, the installer created the required database tables and generat
 
 ## Step 7: Post-Installation Security Configuration
 
-After installation completed successfully, performed the recommended security cleanup tasks.
+After installation completed successfully, performed the recommended security hardening steps.
 
-### Security Tasks
+### Security Tasks Completed
 
 - Removed write permissions from `include/ost-config.php`
 - Deleted the `setup` directory
@@ -223,11 +242,11 @@ After installation completed successfully, performed the recommended security cl
 - Verified administrator access
 - Verified user portal access
 
-These steps prevent unauthorized configuration changes and accidental reinstallation.
+These actions help prevent unauthorized modifications and accidental reinstallation.
 
 ### Screenshots
 
-![Config File Permissions](images/config-permissions.png)
+![Configuration File Permissions Updated](images/config-permissions.png)
 
 ![Setup Folder Removed](images/setup-folder-removed.png)
 
@@ -245,10 +264,7 @@ These steps prevent unauthorized configuration changes and accidental reinstalla
 
 ## Step 8: Verify Deployment
 
-Verified successful deployment by accessing both:
-
-- Admin Control Panel
-- End User Support Portal
+Verified successful deployment by accessing both the Administrator Control Panel and End User Support Portal.
 
 Confirmed:
 
@@ -264,44 +280,50 @@ Confirmed:
 
 ![User Portal Verification](images/user-verification.png)
 
+### Skills Demonstrated
+
+- Application Verification
+- System Validation
+- Help Desk Administration
+
+---
+
+## Cloud Environment
+
+This project was deployed within Microsoft Azure using a Windows 10 Virtual Machine.
+
+### Azure Components Used
+
+- Azure Virtual Machine
+- Virtual Network (VNet)
+- Public IP Address
+- Network Security Group (NSG)
+- Remote Desktop Protocol (RDP)
+
+This cloud-based deployment provided hands-on experience managing infrastructure, networking, remote administration, and application hosting within a modern cloud platform.
+
 ---
 
 ## Troubleshooting
 
-If installation issues occur, osTicket provides built-in debugging options.
+During installation, osTicket can identify common issues such as:
 
-### Enable Error Display
+- Missing PHP extensions
+- Database connectivity failures
+- File permission errors
+- Configuration problems
 
-Locate the following lines in:
+Common troubleshooting methods included:
 
-- `bootstrap.php`
-- `main.inc.php` (older versions)
-
-Default:
-
-```php
-ini_set('display_errors',0);
-ini_set('display_startup_errors',0);
-```
-
-Change to:
-
-```php
-ini_set('display_errors',1);
-ini_set('display_startup_errors',1);
-```
-
-Errors can then be reviewed in:
-
-- Browser Output
-- PHP Error Logs
-- IIS Logs
-- osTicket Dashboard Logs
-- Mail Server Logs
+- Reviewing IIS logs
+- Checking PHP error logs
+- Verifying MySQL connectivity
+- Confirming file permissions
+- Reviewing osTicket dashboard logs
 
 ### Skills Demonstrated
 
-- Troubleshooting
+- Troubleshooting Methodology
 - Log Analysis
 - Error Diagnosis
 - Application Support
@@ -310,9 +332,11 @@ Errors can then be reviewed in:
 
 # What I Learned
 
-- How web applications are deployed in a Windows environment.
+- How to deploy and manage a Windows virtual machine in Microsoft Azure.
 - How IIS, PHP, and MySQL work together to support web applications.
-- How to create and configure databases for application backends.
-- How file permissions impact application installation and security.
-- Basic security hardening practices for production deployments.
-- How ticketing systems support IT help desk operations and service management.
+- How to create and manage databases using MySQL and HeidiSQL.
+- How to deploy and configure a help desk ticketing platform.
+- The importance of file permissions during application installation.
+- Basic security hardening practices for web applications.
+- How ticketing systems support IT operations and service management.
+- Real-world troubleshooting techniques used by IT Support and Help Desk professionals.
